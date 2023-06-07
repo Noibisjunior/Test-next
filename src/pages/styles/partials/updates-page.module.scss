@@ -1,0 +1,47 @@
+@import '../modules/typography.styles.scss';
+@import '../modules/mixins.styles.scss';
+@import '../modules/variables.styles.scss';
+.Entry {
+  margin: 0 auto $spacing-lg auto;
+  max-width: 950px;
+  display: flex;
+  justify-content: space-between;
+
+  @include for-size(tablet-landscape) {
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__img {
+    height: 150px;
+    margin-right: $spacing-md;
+    min-width: 250px;
+    max-width: 250px;
+
+    @include for-size(tablet-landscape) {
+      margin: 0 0 $spacing-sm 0;
+    }
+
+    @include for-size(mobile) {
+      width: 300px;
+    }
+  }
+
+  &__title {
+    font-size: 2.4rem;
+  }
+
+  &__date {
+    color: #999;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 3px;
+  }
+
+  
+}

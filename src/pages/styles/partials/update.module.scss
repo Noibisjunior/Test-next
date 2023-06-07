@@ -1,0 +1,33 @@
+@import '../modules/typography.styles.scss';
+@import '../modules/mixins.styles.scss';
+@import '../modules/variables.styles.scss';
+.Update {
+  display: flex;
+  justify-content: center;
+
+  &__img {
+    height: 50px;
+    width: 50px;
+    background: #999;
+    border-radius: 3px;
+    margin-right: 5px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    margin-bottom: 2px;
+    font-size: 1.5rem;
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: 'Quicksand';
+    opacity: 0.75;
+  }
+}

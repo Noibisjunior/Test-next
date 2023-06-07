@@ -1,0 +1,57 @@
+@import '../modules/typography.styles.scss';
+@import '../modules/mixins.styles.scss';
+@import '../modules/variables.styles.scss';
+.PortfolioPage {
+  &__projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: $spacing-lg;
+
+    @include for-size(tablet-portrait) {
+      flex-direction: column;
+    }
+
+    .Project {
+      margin-bottom: $spacing-md;
+    }
+  }
+
+  &__filters {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: $spacing-lg 0 0;
+
+    @include for-size(tablet-portrait) {
+      margin: 0;
+    }
+
+    li {
+      list-style: none;
+      display: inherit;
+    }
+
+    label {
+      padding: 10px 25px;
+      margin: 0 10px;
+      border-radius: 50px;
+      border: 2px solid $purple;
+      font-weight: bold;
+      color: $purple;
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+
+    input {
+      display: none;
+      left: 50px;
+
+      &:checked + label {
+        background: $purple;
+        color: #fff;
+      }
+    }
+  }
+}

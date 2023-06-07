@@ -1,0 +1,17 @@
+@import '../modules/typography.styles.scss';
+@import '../modules/mixins.styles.scss';
+@import '../modules/variables.styles.scss';
+.PortfolioSection {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+    background: #eee;
+    width: 50vw;
+    z-index: -1;
+  }
+}

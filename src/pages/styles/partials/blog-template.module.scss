@@ -1,0 +1,52 @@
+@import '../modules/mixins.styles.scss';
+@import '../modules/variables.styles.scss';
+@import '../modules/typography.styles.scss';
+
+.BlogPage {
+  position: relative;
+  padding-top: 125px;
+
+  &__container {
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__content {
+    max-width: 950px;
+    margin: 0 auto;
+
+    p {
+      line-height: 1.5;
+      margin-bottom: 50px;
+    }
+  }
+  &__header {
+    display: flex;
+  }
+
+  &__img {
+    height: 250px;
+    width: 100%;
+    margin: 0px 20px 20px 0px;
+    max-width: 400px;
+    background: #ccc;
+    margin-bottom: $spacing-sm;
+  }
+
+  @include for-size(tablet-portrait) {
+    padding-top: 50px;
+    &__header {
+      flex-direction: column;
+    }
+  }
+
+  &__back {
+    font-size: 1.5rem;
+    color: #999;
+    display: inline-block;
+    margin-top: $spacing-lg;
+  }
+}

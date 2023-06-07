@@ -1,0 +1,26 @@
+// Web Fonts
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400|Jura:400,500|Ubuntu:400&display=swap');
+
+// Modules
+@import './modules/variables.styles.scss';
+@import './modules/mixins.styles.scss';
+@import './modules/typography.styles.scss';
+
+// Partials
+@import './partials/layout.module.scss';
+@import './partials/header.module.scss';
+@import './partials/updates.module.scss';
+@import './partials/update.module.scss';
+@import './partials/navbar.module.scss';
+@import './partials/mobile-nav.module.scss';
+@import './partials/about-section.module.scss';
+@import './partials/dashboard.module.scss';
+@import './partials/login.module.scss';
+@import './partials/button.module.scss';
+@import './partials/portfolio-section.module.scss';
+@import './partials/project.module.scss';
+@import './partials/footer.module.scss';
+@import './partials/portfolio-page.module.scss';
+@import './partials/updates-page.module.scss';
+@import './partials/blog-template.module.scss';
+@import './partials/modal.module.scss';

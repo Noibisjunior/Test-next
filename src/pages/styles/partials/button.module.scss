@@ -1,0 +1,60 @@
+@import '../modules/mixins.styles.scss';
+@import '../modules/variables.styles.scss';
+@import '../modules/typography.styles.scss';
+
+.Btn {
+  border: none;
+  font-size: 1.4rem;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  display: inline-block;
+  cursor: pointer;
+
+  .icon {
+    margin: 0 3px;
+  }
+
+  &__dark {
+    background: $black;
+    color: $white;
+    padding: 10px 25px;
+  }
+
+  &__no-bg {
+    background: none;
+    padding: none;
+    color: #6d6d6d;
+  }
+
+  &__call-to-action {
+    position: fixed;
+    padding: 10px 25px;
+    top: 105px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 998;
+    background: $purple;
+    color: $white;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.3s;
+    margin-top: 0;
+
+    @include for-size(tablet-landscape) {
+      border-radius: 50px;
+      top: 10px;
+    }
+  }
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -100px);
+  transition-delay: 0s;
+}

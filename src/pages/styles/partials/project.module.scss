@@ -1,0 +1,42 @@
+@import '../modules/typography.styles.scss';
+@import '../modules/mixins.styles.scss';
+@import '../modules/variables.styles.scss';
+
+.Project {
+  width: 30%;
+
+  @include for-size(tablet-portrait) {
+    width: 100%;
+    margin-bottom: $spacing-md;
+    &__img {
+      height: 250px !important;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__img {
+    height: 200px;
+    width: 100%;
+    background: #ccc;
+    margin-bottom: $spacing-sm;
+  }
+}
+.Btn {
+  border: none;
+  font-size: 1.4rem;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  display: inline-block;
+  cursor: pointer;
+
+
+  &__dark {
+    background: $black;
+    color: $white;
+    padding: 10px 25px;
+  }
+}

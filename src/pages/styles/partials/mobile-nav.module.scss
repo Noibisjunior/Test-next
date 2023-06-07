@@ -1,0 +1,33 @@
+@import '../modules/typography.styles.scss';
+@import '../modules/mixins.styles.scss';
+@import '../modules/variables.styles.scss';
+.MobileNav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: $black;
+  display: none;
+  z-index: 999;
+  padding: $spacing-sm 0;
+
+  @include for-size(tablet-landscape) {
+    display: block;
+    padding: 0;
+  }
+
+  &__links {
+    color: #555;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__link {
+    font-size: 1.6em;
+    color: #636363;
+
+    &__active {
+      color: $white;
+    }
+  }
+}

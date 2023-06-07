@@ -1,0 +1,60 @@
+@import '../modules/mixins.styles.scss';
+@import '../modules/variables.styles.scss';
+@import '../modules/typography.styles.scss';
+
+.Modal {
+  position: fixed;
+  background: #fff;
+  max-width: 600px;
+  width: 95%;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: $spacing-md;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+
+  &__title {
+    font-size: 2.3em;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__text {
+    p {
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  background: #000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9998;
+  opacity: 0.5;
+}
+.Btn {
+  border: none;
+  font-size: 1.4rem;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  display: inline-block;
+  cursor: pointer;
+
+
+  &__dark {
+    background: $black;
+    color: $white;
+    padding: 10px 25px;
+  }
+}

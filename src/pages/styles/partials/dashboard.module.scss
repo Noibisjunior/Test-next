@@ -1,0 +1,87 @@
+@import '../modules/mixins.styles.scss';
+@import '../modules/variables.styles.scss';
+@import '../modules/typography.styles.scss';
+
+.Dashboard {
+  &__paypal-form {
+    text-align: center;
+    margin-top: 25px;
+  }
+  &__content-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  &__section-dark {
+    background-color: rgb(245, 245, 245);
+  }
+  &__section {
+    padding: 50px;
+  }
+  &__content {
+    width: 200px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1 1 25%;
+    min-height: 200px;
+    background: linear-gradient(to bottom right, #9b59b6, #673d90);
+
+    p {
+      color: #fff;
+    }
+
+    @include for-size(mobile) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__content-top-half {
+    flex-direction: row;
+    padding: 10px;
+
+    p {
+      margin-top: 0;
+      font-weight: bold;
+    }
+
+    span {
+      color: rgba(#fff, 0.65);
+    }
+  }
+
+  &__content-bottom-half {
+    padding: 10px;
+  }
+  &__logout-btn {
+    position: fixed;
+    padding: 10px 10px;
+    bottom: 0px;
+    right: 0;
+    transform: translate(-50%, 0);
+    z-index: 998;
+    background: $purple;
+    color: $white;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.3s;
+    margin-top: 0;
+
+    @include for-size(mobile) {
+      bottom: 72.5px;
+      right: 25%;
+    }
+    @include for-size(tablet-landscape) {
+      bottom: 72.5px;
+      right: 0;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0.5;
+  }
+}

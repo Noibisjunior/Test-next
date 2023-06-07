@@ -1,0 +1,16 @@
+@import '../modules/mixins.styles.scss';
+@import '../modules/variables.styles.scss';
+@import '../modules/typography.styles.scss';
+
+.Login {
+    display: flex;
+    margin-top: 2vh;
+    form {
+        margin: 0 auto; 
+        justify-content: center;
+        input {
+          margin: 25px auto;
+        }
+    }
+      
+}

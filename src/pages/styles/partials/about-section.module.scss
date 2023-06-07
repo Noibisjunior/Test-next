@@ -1,0 +1,33 @@
+@import '../modules/mixins.styles.scss';
+@import '../modules/variables.styles.scss';
+@import '../modules/typography.styles.scss';
+
+.AboutSection {
+  display: flex;
+
+  @include for-size(tablet-landscape) {
+    flex-direction: column;
+  }
+
+  @include for-size(mobile) {
+    padding: $spacing-lg $spacing-sm;
+  }
+
+  &__left {
+    flex: 0 0 40%;
+    margin-right: $spacing-sm;
+
+    p {
+      width: 85%;
+      font-weight: 100;
+    }
+
+    hr {
+      width: 100px;
+      margin: 25px 0;
+      height: 3px;
+      border: none;
+      background: #936899;
+    }
+  }
+}

@@ -1,0 +1,148 @@
+@import '../modules/mixins.styles.scss';
+@import '../modules/variables.styles.scss';
+@import '../modules/typography.styles.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand';
+  color: $black;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Ubuntu';
+}
+
+.rcw-conversation-container .rcw-header {
+  background-color: $purple !important;
+  span {
+    display: none;
+  }
+}
+.rcw-conversation-container .rcw-close-button {
+  background-color: $purple !important;
+}
+.rcw-client .rcw-message-text {
+  background-color: $purple !important;
+  p {
+    color: white !important;
+  }
+}
+.rcw-picker-btn,
+.rcw-send {
+  display: none;
+}
+
+.rcw-launcher {
+  background-color: $purple !important;
+}
+
+.bg-cookie {
+  position: fixed;
+  z-index: 10;
+  padding: 20px;
+  background-color: $purple;
+  color: white;
+  bottom: 0;
+  @include for-size(tablet-landscape) {
+    bottom: auto !important;
+  }
+  p {
+    font-size: 14px;
+    color: $white;
+  }
+
+  button {
+    border: none;
+    font-size: 1.4rem;
+    margin-top: 25px;
+    align-items: center;
+    display: inline-block;
+    cursor: pointer;
+    background: $white;
+    color: $black;
+    padding: 10px 25px;
+    font-family: 'Jura';
+  }
+  .d-flex {
+    display: flex;
+    justify-content: space-around;
+    @include for-size(tablet-landscape) {
+      display: block !important;
+    }
+  }
+  .float-end {
+    .btn-primary {
+      color: $white;
+      background-color: green !important;
+      border-color: $white !important;
+    }
+  }
+}
+
+h2,
+h3,
+h4 {
+  font-family: 'Jura';
+  margin-bottom: 5px;
+}
+
+ul,
+ol {
+  margin: 25px 0;
+  padding-left: 20px;
+}
+
+p,
+li {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Jura';
+}
+
+section {
+  padding: 125px $spacing-xl;
+
+  @include for-size(tablet-landscape) {
+    padding: 75px 25px;
+  }
+}
+
+.dFlex {
+  display: flex;
+  justify-content: space-between;
+
+  @include for-size(tablet-portrait) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.mb {
+  margin-bottom: $spacing-md;
+}
+
+#mc_embed_signup {
+  background-color: $purple !important;
+  color: $white !important;
+}
+
+#mc_embed_signup .button {
+  background-color: #4bb543 !important;
+}
